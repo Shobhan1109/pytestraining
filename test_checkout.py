@@ -1,12 +1,8 @@
-import pytest
+def test_Paymeny():
+    print("do the payment.")
 
-@pytest.fixture
-def SetUp():
-    print("Opened the amazon app.")
-    print("Logged in")
-    yield
-    print("logged out")
-    print("Closed amazon app.")
-
-def test_Paymeny(SetUp):
+def test_Paymeny_confirmation():
     print("Payment successful.")
+
+def test_orderplaced():
+    print("Order placed.")
